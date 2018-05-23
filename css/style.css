@@ -48,11 +48,8 @@ body {
 }
 
 .page-header__logo {
-/*  position: absolute;*/
   width: 210px;
   height: 110px;
-/*  left: 50px;
-  top: 30px;*/
 }
 
 .page-header__logo--big {
@@ -116,6 +113,7 @@ body {
 }
 
 .about-page__container {
+  margin-right: 0;
   height: 800px;
   background-color: #fff;
   position: relative;
@@ -229,7 +227,7 @@ body {
 
 .dishes-item {
   display: flex;
-  width: 825px;
+  width: 50%;
   height: 410px;
 }
 
@@ -285,7 +283,22 @@ body {
   background-image: linear-gradient(to top right, #dbefe4 50%, #fff 50%);
   height: 1720px;
   position: relative;
+}
+
+.menu-wrapper {
   overflow-x: hidden;
+  overflow-y: hidden;
+  margin-top: -220px;
+  padding-top: 200px;
+}
+
+.menu-pictures {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 1720px;
 }
 
 .menu-container {
@@ -353,6 +366,18 @@ body {
   margin-bottom: 0;
 }
 
+.menu-block__price:before {
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 40px;
+  background-image: url(../img/sprite.png);
+  background-position: 0 -80px;
+  position: relative;
+  top: -20px;
+  right: 10px;
+}
+
 .menu-block__price {
   font-size: 85px;
   color: #fc4263;
@@ -367,6 +392,7 @@ body {
   position: absolute;
   width: 200px;
   height: 200px;
+  z-index: 10;
 }
 
 .menu__img {
@@ -376,7 +402,7 @@ body {
 
 .menu__img-wrap:first-child {
   left: 0;
-  top: -100px;
+  top: -200px;
 }
 
 .menu__img-wrap:nth-child(2) {
