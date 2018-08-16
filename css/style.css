@@ -32,6 +32,7 @@ body {
 
 .page-header {
   height: 1080px;
+  width: 100%;
   background-image: url(../img/first-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -118,7 +119,7 @@ body {
   background-color: #fff;
   position: relative;
   top: -55px;
-  margin: auto;
+  margin: 0 auto;
   box-shadow: 5px 0 30px -8px #c3bfb9, -5px 0 30px -8px #c3bfb9;
   z-index: 10;
   border-radius: 10px;
@@ -351,6 +352,7 @@ body {
   height: 55px;
   margin-bottom: 55px;
   position: relative;
+  z-index: 40;
 }
 
 .menu-block__name {
