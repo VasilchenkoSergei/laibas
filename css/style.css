@@ -32,7 +32,7 @@ body {
 
 .page-header {
   height: 1080px;
-  width: 100%;
+  min-width: 1650px;
   background-image: url(../img/first-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
@@ -43,7 +43,7 @@ body {
   content: '';
   position: absolute;
   height: 1080px;
-  width: 100%;
+  min-width: 1650px;
   background-color: #000;
   opacity: 0.4;
 }
@@ -195,13 +195,14 @@ body {
   background-position: center;
   background-size: cover;
   margin-top: -100px;
+  min-width: 1650px;
 }
 
 .specialities:before {
   content: '';
   position: absolute;
   height: 900px;
-  width: 100%;
+  min-width: 1650px;
   background-color: #000;
   opacity: 0.4;
 }
@@ -279,11 +280,13 @@ body {
   background-position: center;
   background-size: cover;
   margin-top: -140px;
+  min-width: 1650px;
 }
 
 .menu {
   background-image: linear-gradient(to top right, #dbefe4 50%, #fff 50%);
   height: 1720px;
+  min-width: 1650px;
   position: relative;
 }
 
@@ -292,6 +295,7 @@ body {
   overflow-y: hidden;
   margin-top: -220px;
   padding-top: 200px;
+  min-width: 1650px;
 }
 
 .menu-pictures {
@@ -445,6 +449,7 @@ body {
   background-position: center;
   background-size: cover;
   position: relative;
+  min-width: 1650px;
   
 }
 
@@ -456,7 +461,7 @@ body {
   color: #fff;
   margin: 0 auto;
   text-align: center;
-  padding-top: 880px;
+  padding-top: 730px;
   padding-bottom: 90px;
 }
 
@@ -599,6 +604,7 @@ body {
   background-image: linear-gradient(to top, #000 25%, #272727 25%);
   padding-top: 120px;
   position: relative;
+  min-width: 1650px;
 }
 
 .page-footer__socials {
@@ -713,4 +719,17 @@ body {
   bottom: 110px;
   background-image: url(../img/sprite.png);
   background-position: 0 -160px;
+}
+
+@media (min-width: 1650px) {
+
+.page-header:before {
+  width: 100%;
+}
+
+.specialities:before {
+  width: 100%;
+}
+
+
 }
